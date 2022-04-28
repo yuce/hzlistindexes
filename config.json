@@ -1,7 +1,7 @@
 {
-  "cluster": {
-    "network": {
-      "addresses": [
+  "Cluster": {
+    "Network": {
+      "Addresses": [
         "localhost:5701"
       ]
     }
