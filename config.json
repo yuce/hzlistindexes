@@ -1,0 +1,9 @@
+{
+  "cluster": {
+    "network": {
+      "addresses": [
+        "localhost:5701"
+      ]
+    }
+  }
+}
