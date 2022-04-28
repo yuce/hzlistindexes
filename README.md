@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* Go 1.15 or better
+* Go 1.18 or better
 
 ## Build
 
