@@ -22,5 +22,6 @@ Members {size:1, ver:1} [
 ]
 
 001: name: age, type: 0 on key: __key, attrs: [age]
-
 ```
+
+Note that the JSON configuration is specific to the Go client. Find more at the [documentation](https://pkg.go.dev/github.com/hazelcast/hazelcast-go-client#hdr-Configuration).
