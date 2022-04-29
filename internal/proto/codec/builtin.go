@@ -29,12 +29,14 @@ func NextFrameIsDataStructureEndFrame(frameIterator *proto.ForwardFrameIterator)
 
 func DecodeListMultiFrameForIndexConfig(frameIterator *proto.ForwardFrameIterator) []types.IndexConfig {
 	result := make([]types.IndexConfig, 0)
-	frameIterator.Next()
+	if frameIterator.HasNext() {
+		frameIterator.Next()
 
-	for !NextFrameIsDataStructureEndFrame(frameIterator) {
-		result = append(result, DecodeIndexConfig(frameIterator))
+		for !NextFrameIsDataStructureEndFrame(frameIterator) {
+			result = append(result, DecodeIndexConfig(frameIterator))
+		}
+		frameIterator.Next()
 	}
-	frameIterator.Next()
 	return result
 }
 
